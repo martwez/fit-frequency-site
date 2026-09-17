@@ -14,7 +14,12 @@ export default function Header() {
     <header className="fixed top-0 left-0 right-0 z-50 bg-[#fdf9f5]/90 backdrop-blur-sm border-b border-[#f0ded2]">
       <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
         <a href="#top" className="flex items-center gap-2 text-[#4a4038]">
-          <img src={`${import.meta.env.BASE_URL}images/logo-icon.png`} alt="Fit Frequency Wellness" className="h-10 w-10 object-contain" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/logo-icon.png`}
+            alt="Fit Frequency Wellness"
+            className="h-10 w-10 object-contain"
+            decoding="async"
+          />
           <span className="font-serif text-xl tracking-wide">Fit Frequency Wellness</span>
         </a>
 

@@ -12,6 +12,9 @@ dist
 dist-ssr
 *.local
 
+# Local stock-photo downloads, not part of the site
+commercial pics/
+
 # Editor directories and files
 .vscode/*
 !.vscode/extensions.json

@@ -10,7 +10,12 @@ export default function Hero() {
     >
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <div className="flex justify-center mb-6">
-          <img src={`${import.meta.env.BASE_URL}images/logo-icon.png`} alt="Fit Frequency Wellness" className="w-24 h-24 object-contain" />
+          <img
+            src={`${import.meta.env.BASE_URL}images/logo-icon.png`}
+            alt="Fit Frequency Wellness"
+            className="w-24 h-24 object-contain"
+            decoding="async"
+          />
         </div>
         <p className="uppercase tracking-[0.3em] text-xs text-[#bf8a72] mb-4">
           Mind &middot; Body &middot; Energy
@@ -50,6 +55,9 @@ export default function Hero() {
             src={`${import.meta.env.BASE_URL}images/photos/hero-mountains.jpg`}
             alt="Golden hour over the California mountains"
             className="absolute inset-0 w-full h-full object-cover"
+            loading="eager"
+            fetchPriority="high"
+            decoding="async"
           />
           <div
             className="absolute inset-0"

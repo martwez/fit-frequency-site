@@ -67,6 +67,8 @@ export default function Offerings() {
                   src={`${import.meta.env.BASE_URL}images/photos/${item.image}`}
                   alt={item.alt}
                   className="w-full h-full object-cover"
+                  loading="lazy"
+                  decoding="async"
                 />
               </div>
               <div className="p-8">
