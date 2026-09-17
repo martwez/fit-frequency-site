@@ -9,7 +9,7 @@ export default function Connect() {
     >
       <div className="max-w-2xl mx-auto text-white">
         <div className="flex justify-center mb-6">
-          <img src="/images/logo-icon.png" alt="Fit Frequency Wellness" className="w-16 h-16 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}images/logo-icon.png`} alt="Fit Frequency Wellness" className="w-16 h-16 object-contain" />
         </div>
         <h2 className="font-serif text-3xl md:text-4xl mb-4">
           Follow along @fitfrequency.wellness

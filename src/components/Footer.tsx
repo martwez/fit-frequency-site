@@ -3,7 +3,7 @@ export default function Footer() {
     <footer className="py-10 px-6 bg-[#fdf9f5] border-t border-[#f0ded2]">
       <div className="max-w-6xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4 text-sm text-[#8a7967]">
         <div className="flex items-center gap-2">
-          <img src="/images/logo-icon.png" alt="Fit Frequency Wellness" className="w-6 h-6 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}images/logo-icon.png`} alt="Fit Frequency Wellness" className="w-6 h-6 object-contain" />
           <span>Fit Frequency Wellness &middot; Mind &middot; Body &middot; Energy</span>
         </div>
         <div className="flex items-center gap-6">

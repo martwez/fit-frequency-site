@@ -10,7 +10,7 @@ export default function Hero() {
     >
       <div className="max-w-3xl mx-auto text-center relative z-10">
         <div className="flex justify-center mb-6">
-          <img src="/images/logo-icon.png" alt="Fit Frequency Wellness" className="w-24 h-24 object-contain" />
+          <img src={`${import.meta.env.BASE_URL}images/logo-icon.png`} alt="Fit Frequency Wellness" className="w-24 h-24 object-contain" />
         </div>
         <p className="uppercase tracking-[0.3em] text-xs text-[#bf8a72] mb-4">
           Mind &middot; Body &middot; Energy
