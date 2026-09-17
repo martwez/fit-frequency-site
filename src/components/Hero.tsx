@@ -2,7 +2,7 @@ export default function Hero() {
   return (
     <section
       id="top"
-      className="relative overflow-hidden pt-40 pb-28 px-6"
+      className="relative overflow-hidden pt-40 pb-24 px-6"
       style={{
         background:
           'radial-gradient(circle at 20% 20%, #f7d9cd 0%, transparent 45%), radial-gradient(circle at 80% 30%, #f3e3b8 0%, transparent 50%), linear-gradient(180deg, #fdf9f5 0%, #fbf3ec 100%)',
@@ -26,7 +26,7 @@ export default function Hero() {
           Movement &middot; Meditation &middot; Sound &mdash; a small wellness practice
           based in California.
         </p>
-        <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+        <div className="flex flex-col sm:flex-row items-center justify-center gap-4 mb-16">
           <a
             href="https://www.instagram.com/fitfrequency.wellness/"
             target="_blank"
@@ -41,6 +41,23 @@ export default function Hero() {
           >
             Explore Offerings
           </a>
+        </div>
+      </div>
+
+      <div className="max-w-5xl mx-auto relative z-10">
+        <div className="relative rounded-3xl overflow-hidden shadow-xl aspect-[16/9]">
+          <img
+            src={`${import.meta.env.BASE_URL}images/photos/hero-mountains.jpg`}
+            alt="Golden hour over the California mountains"
+            className="absolute inset-0 w-full h-full object-cover"
+          />
+          <div
+            className="absolute inset-0"
+            style={{ background: 'linear-gradient(0deg, rgba(74,64,56,0.55) 0%, transparent 45%)' }}
+          />
+          <p className="absolute bottom-5 left-6 text-white font-serif text-lg sm:text-xl italic">
+            Every session begins where the trail meets the sky.
+          </p>
         </div>
       </div>
     </section>

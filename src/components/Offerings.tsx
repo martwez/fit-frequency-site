@@ -1,6 +1,8 @@
 const offerings = [
   {
     title: 'Movement',
+    image: 'offer-movement.jpg',
+    alt: 'Outdoor yoga stretch overlooking snow-capped mountains',
     description:
       'Functional strength, mobility, and outdoor training built around how your body actually moves through life.',
     icon: (
@@ -13,6 +15,8 @@ const offerings = [
   },
   {
     title: 'Meditation',
+    image: 'offer-meditation.jpg',
+    alt: 'Sitting in stillness facing a red rock desert sunrise',
     description:
       'Guided stillness practices that quiet the noise and bring your focus back to what matters.',
     icon: (
@@ -25,6 +29,8 @@ const offerings = [
   },
   {
     title: 'Sound',
+    image: 'offer-sound.jpg',
+    alt: 'Hands playing a brass singing bowl',
     description:
       'Sound healing and frequency work that resets the nervous system and deepens recovery.',
     icon: (
@@ -54,22 +60,31 @@ export default function Offerings() {
           {offerings.map((item) => (
             <div
               key={item.title}
-              className="bg-white/70 rounded-2xl p-8 text-center border border-[#f0ded2] hover:shadow-lg hover:-translate-y-1 transition-all"
+              className="bg-white/70 rounded-2xl overflow-hidden text-center border border-[#f0ded2] hover:shadow-lg hover:-translate-y-1 transition-all"
             >
-              <div className="flex justify-center mb-5 text-[#c1725a]">
-                <svg
-                  width="32"
-                  height="32"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="1.5"
-                >
-                  {item.icon}
-                </svg>
+              <div className="aspect-[4/3] overflow-hidden">
+                <img
+                  src={`${import.meta.env.BASE_URL}images/photos/${item.image}`}
+                  alt={item.alt}
+                  className="w-full h-full object-cover"
+                />
               </div>
-              <h3 className="font-serif text-2xl text-[#4a4038] mb-3">{item.title}</h3>
-              <p className="text-[#6b5d4f] leading-relaxed">{item.description}</p>
+              <div className="p-8">
+                <div className="flex justify-center mb-5 text-[#c1725a]">
+                  <svg
+                    width="32"
+                    height="32"
+                    viewBox="0 0 24 24"
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth="1.5"
+                  >
+                    {item.icon}
+                  </svg>
+                </div>
+                <h3 className="font-serif text-2xl text-[#4a4038] mb-3">{item.title}</h3>
+                <p className="text-[#6b5d4f] leading-relaxed">{item.description}</p>
+              </div>
             </div>
           ))}
         </div>
