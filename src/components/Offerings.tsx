@@ -42,7 +42,7 @@ export default function Offerings() {
     <section id="offerings" className="py-24 px-6 bg-[#f8f1e9]">
       <div className="max-w-5xl mx-auto">
         <div className="text-center mb-14">
-          <p className="uppercase tracking-[0.3em] text-xs text-[#a4876a] mb-4">
+          <p className="uppercase tracking-[0.3em] text-xs text-[#bf8a72] mb-4">
             What We Offer
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#4a4038]">
@@ -54,9 +54,9 @@ export default function Offerings() {
           {offerings.map((item) => (
             <div
               key={item.title}
-              className="bg-white/70 rounded-2xl p-8 text-center border border-[#e8ddd0] hover:shadow-lg hover:-translate-y-1 transition-all"
+              className="bg-white/70 rounded-2xl p-8 text-center border border-[#f0ded2] hover:shadow-lg hover:-translate-y-1 transition-all"
             >
-              <div className="flex justify-center mb-5 text-[#8a6f52]">
+              <div className="flex justify-center mb-5 text-[#c1725a]">
                 <svg
                   width="32"
                   height="32"

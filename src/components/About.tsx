@@ -7,7 +7,7 @@ export default function About() {
           A practice built on movement, stillness, and sound
         </h2>
         <p className="text-[#6b5d4f] leading-relaxed text-lg">
-          Fit Frequency is a founder-led wellness practice for people who want more than
+          Fit Frequency Wellness is a founder-led wellness practice for people who want more than
           a workout &mdash; a rhythm. Every session blends functional movement, guided
           meditation, and sound to help you strengthen your body, focus your mind, and
           come back into balance. No big-box gym energy, just intentional, personal

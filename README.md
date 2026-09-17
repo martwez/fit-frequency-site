@@ -1,6 +1,6 @@
-# Fit Frequency
+# Fit Frequency Wellness
 
-Marketing site for Fit Frequency, a Mind · Body · Energy wellness practice
+Marketing site for Fit Frequency Wellness, a Mind · Body · Energy wellness practice
 (movement, meditation, and sound) based in California — built from the brand's
 Instagram, [@fitfrequency.wellness](https://www.instagram.com/fitfrequency.wellness/).
 

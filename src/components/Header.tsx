@@ -1,5 +1,4 @@
 import { useState } from 'react'
-import LotusMark from './LotusMark'
 
 const links = [
   { href: '#about', label: 'About' },
@@ -12,16 +11,16 @@ export default function Header() {
   const [open, setOpen] = useState(false)
 
   return (
-    <header className="fixed top-0 left-0 right-0 z-50 bg-[#fdf9f5]/90 backdrop-blur-sm border-b border-[#e8ddd0]">
-      <div className="max-w-6xl mx-auto px-6 py-4 flex items-center justify-between">
-        <a href="#top" className="flex items-center gap-2 text-[#8a6f52]">
-          <LotusMark className="w-8 h-8" />
-          <span className="font-serif text-xl tracking-wide">Fit Frequency</span>
+    <header className="fixed top-0 left-0 right-0 z-50 bg-[#fdf9f5]/90 backdrop-blur-sm border-b border-[#f0ded2]">
+      <div className="max-w-6xl mx-auto px-6 py-3 flex items-center justify-between">
+        <a href="#top" className="flex items-center gap-2 text-[#4a4038]">
+          <img src="/images/logo-icon.png" alt="Fit Frequency Wellness" className="h-10 w-10 object-contain" />
+          <span className="font-serif text-xl tracking-wide">Fit Frequency Wellness</span>
         </a>
 
         <nav className="hidden md:flex items-center gap-8 text-sm tracking-wide text-[#6b5d4f]">
           {links.map((link) => (
-            <a key={link.href} href={link.href} className="hover:text-[#8a6f52] transition-colors">
+            <a key={link.href} href={link.href} className="hover:text-[#c1725a] transition-colors">
               {link.label}
             </a>
           ))}
@@ -29,7 +28,7 @@ export default function Header() {
             href="https://www.instagram.com/fitfrequency.wellness/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-full bg-[#8a6f52] text-white hover:bg-[#6f5840] transition-colors"
+            className="px-4 py-2 rounded-full bg-[#c1725a] text-white hover:bg-[#8f5a44] transition-colors"
           >
             DM to Reserve
           </a>
@@ -61,7 +60,7 @@ export default function Header() {
             href="https://www.instagram.com/fitfrequency.wellness/"
             target="_blank"
             rel="noopener noreferrer"
-            className="px-4 py-2 rounded-full bg-[#8a6f52] text-white text-center"
+            className="px-4 py-2 rounded-full bg-[#c1725a] text-white text-center"
           >
             DM to Reserve
           </a>

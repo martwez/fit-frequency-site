@@ -31,7 +31,7 @@ export default function WeeklyRhythm() {
     <section id="rhythm" className="py-24 px-6 bg-[#fdf9f5]">
       <div className="max-w-6xl mx-auto">
         <div className="text-center mb-14">
-          <p className="uppercase tracking-[0.3em] text-xs text-[#a4876a] mb-4">
+          <p className="uppercase tracking-[0.3em] text-xs text-[#bf8a72] mb-4">
             Weekly Rhythm
           </p>
           <h2 className="font-serif text-3xl md:text-4xl text-[#4a4038] mb-4">
@@ -47,15 +47,15 @@ export default function WeeklyRhythm() {
           {days.map((item, i) => (
             <div
               key={item.day}
-              className="rounded-2xl p-6 border border-[#e8ddd0] flex flex-col gap-3"
+              className="rounded-2xl p-6 border border-[#f0ded2] flex flex-col gap-3"
               style={{
                 background:
                   i % 2 === 0
-                    ? 'linear-gradient(160deg, #f6e2df 0%, #fdf9f5 100%)'
-                    : 'linear-gradient(160deg, #dde8d3 0%, #fdf9f5 100%)',
+                    ? 'linear-gradient(160deg, #f7d9cd 0%, #fdf9f5 100%)'
+                    : 'linear-gradient(160deg, #f3e3b8 0%, #fdf9f5 100%)',
               }}
             >
-              <span className="text-xs uppercase tracking-[0.2em] text-[#a4876a]">
+              <span className="text-xs uppercase tracking-[0.2em] text-[#bf8a72]">
                 {item.day}
               </span>
               <h3 className="font-serif text-xl text-[#4a4038]">{item.title}</h3>
